@@ -62,52 +62,56 @@
       <form action="" class="form" id="form">
 
         <div class="form-contenedor">
-    
+
           <label for="input-nombre" class="label">Cardholder Name</label>
-          <input type="text" maxlength="24"  class="input" id="input-nombre" onkeypress="return soloLetras(event)" placeholder=" e.g. Jane Appleseed" required>
+          <input type="text" maxlength="24" class="input" id="input-nombre" onkeypress="return soloLetras(event)"
+            placeholder=" e.g. Jane Appleseed" required>
         </div>
-    
+
         <div class="form-contenedor">
-    
+
           <label for="input-number" class="label">Card Number</label>
-          <input type="text" maxlength="16" class="input" id="input-number" onkeypress="return soloNumeros(event)" placeholder="e.g. 1234 5678 9123 0000"
-            required>
-    
+          <input type="text" minlength="16" maxlength="16" class="input" id="input-number"
+            onkeypress="return soloNumeros(event)" placeholder="e.g. 1234 5678 9123 0000" required>
+
         </div>
-    
+
         <div class="form-contenedor double">
           <div class="rows">
             <label for="input-exp" class="label">Exp. Date (MM/YY) </label>
-    
+
             <div class="columns">
-              <input type="text" maxlength="2" class="input" id="input-mes" onkeypress="return soloNumeros(event)" placeholder="MM" required>
-              <input type="text" maxlength="2" class="input" id="input-año" onkeypress="return soloNumeros(event)" placeholder="YY" required>
-    
+              <input type="text" maxlength="2" class="input" id="input-mes" onkeypress="return soloNumeros(event)"
+                placeholder="MM" required>
+              <input type="text" maxlength="2" class="input" id="input-año" onkeypress="return soloNumeros(event)"
+                placeholder="YY" required>
+
             </div>
-    
+
           </div>
-    
+
           <div class="rows">
             <label for="input-cvc" class="label">CVC</label>
-            <input type="text" maxlength="3" class="input" id="input-cvc" onkeypress="return soloNumeros(event)" placeholder=" e.g. 123" required>
+            <input type="text" minlength="3" maxlength="3" class="input" id="input-cvc"
+              onkeypress="return soloNumeros(event)" placeholder=" e.g. 123" required>
           </div>
-    
+
         </div>
-    
+
         <div class="button">
           <button class="button" type="submit">Confirm</button>
         </div>
-      </div>
-    
-        </form>
-    
-      <div class="thank-you disabled" id="thank-you">
-       <img src="./images/icon-complete.svg" alt="Ícono de completado">
-       <p class="thank-you-title">Thank you!</p>
-       <p class="thank-you-text">We've added your card details</p>
-        <button class="button" id="continue">Continue</button>
-      </div>
-    
+    </div>
+
+    </form>
+
+    <div class="thank-you disabled" id="thank-you">
+      <img src="./images/icon-complete.svg" alt="Ícono de completado">
+      <p class="thank-you-title">Thank you!</p>
+      <p class="thank-you-text">We've added your card details</p>
+      <button class="button" id="continue">Continue</button>
+    </div>
+
     </div>
 
 
